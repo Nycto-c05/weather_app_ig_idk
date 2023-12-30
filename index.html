@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    header{
+        padding: 10px;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    form{
+        text-align: center;
+        padding: 10px;
+    }
+
+    input{
+        border-radius: 15px 15px 15px 15px;
+        border-width: 1px;
+    }
+
+    #res{
+        border-width: 2px;
+    }
+</style>
+
+<header style="background-color: rgb(90, 21, 180);">
+    <h1 style="text-align: center; color: white;">Weather Dashboard</h1>
+</header>
+
+<body>
+    
+    <form>
+        <label for="input">Enter Name Of City:</label>
+        <input type="text" id='input' name='input' placeholder="Enter Name Of City">
+        <button style="border-radius: 15px; border-width: 1px;" type="submit" onclick="handleFormSubmit(event)">Submit</button>
+    </form>
+
+    <div id=res>
+        <h2 id="Location"></h2>
+    </div>
+    <span>
+        <img style="display: inline; vertical-align: middle;;" id='fav' src="" alt="">
+        <h3 style="display: inline; vertical-align: middle;" id="temp"></h3>
+    </span>
+
+    <div>
+        <ul id = 'list' style="list-style-type: none;">
+            <li id="humid"></li>
+            <li id="wind"></li>
+        </ul>
+    </div>
+</body>
+
+</html>
