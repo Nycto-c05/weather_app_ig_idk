@@ -13,7 +13,7 @@ function handleFormSubmit(event) {
     city = inputValue;
     let res = undefined
     if (city) {
-        const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`;
+        const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`;
         currentWeather(apiUrl)
             .then(data => {
                 res = data
