@@ -1,9 +1,9 @@
 
 
 function handleFormSubmit(event) {
-    const apiKey = '83ddd664823c43e098470241233012';
+    const apiKey = '83ddd43e09847041233012';
     let city = undefined;
-    // Prevent the default form submission
+    // Prevent the defaut form submission
     event.preventDefault();
 
     const inputValue = document.getElementById('input').value;
