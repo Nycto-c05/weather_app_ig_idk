@@ -1,7 +1,7 @@
 
 
 function handleFormSubmit(event) {
-    const apiKey = '83ddd43e09847041233012';//ecpired anyway
+    const apiKey = '83ddd43e09847041233012';//expired anyway
     let city = undefined;
     // Prevent the defaut form submission
     event.preventDefault();
